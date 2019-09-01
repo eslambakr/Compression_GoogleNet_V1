@@ -1,4 +1,3 @@
-"""
 import tensorboard
 import tensorflow as tf
 #tf.enable_eager_execution()
@@ -71,7 +70,6 @@ _, keras_file = tempfile.mkstemp('.h5')
 print('Saving model to: ', keras_file)
 tf.keras.models.save_model(model, keras_file, include_optimizer=False)
 
-"""
 #############################################################################################################
 ###################################       Pruning         ###################################################
 #############################################################################################################
